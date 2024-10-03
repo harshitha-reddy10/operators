@@ -1,13 +1,2 @@
-'''
-Assume Dhoni's current age is 6. After 3 years, Dhoni's mother Devki Devi would be 4 times Dhoni's age. What is Devki Devi's current age? Write a program to determine the same.
-Input Format:
-First line of input consists of one integer value as age of Dhoni.
-Output Format:
-Output should display an integer that specifies Devki Devi's current age.
-'''
-Sample Input and Output1:
-6
-33
-Sample Input and Output2:
-3
-21
+age_of_dhoni = int(input("Enter the age of MS Dhoni: "))
+print("The age of MS Dhoni is:", age_of_dhoni)
