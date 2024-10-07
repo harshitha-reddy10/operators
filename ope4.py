@@ -1,25 +1,30 @@
-'''
-Extras are runs scored by a means other than a batsman hitting the ball. A batsman is not given credit for extras other than runs scored off the bat from a no ball, and the extras are tallied separately on the scorecard and count only towards the team’s score. the types of extras are No ball, Wide, Bye, Leg-bye and Penalty. 1 Penalty corresponds to 5 runs.
-Find the total runs that the Extras contribute to the team’s score, given the number of No-balls, wides, byes, leg-byes and penalty given off by the bowlers in innings.
-Input format:
-First line of the input contains an integer that corresponds to the number of No-balls.
-Second line of the input contain an integer that corresponds to the numbers of wides.
-Third line of the input contains an integer that corresponds to the number of byes.
-Fourth line of the input contain an integer that corresponds to the numbers of led-byes.
-Fifth line of the input contains an integer that corresponds to the numbers of penalty runs.
-Output format:
-Output should display an integer that returns the total runs that the extras together contribute to team’s total.
-'''
-Sample input and output 1:
-4
-7
-3
-10
-3
-39
-Sample input and output 2:
+...
+ Finding the Slope of a Line
+Problem Statement
+Ajay and Binoy are curious about the slope of the line joining their houses. Given the coordinates of the 2 endpoints of a line (x1,y1)(x_1, y_1)(x1​,y1​) and (x2,y2)(x_2, y_2)(x2​,y2​), write a Python program to find the slope of the line.
+Formula:
+slope=x2​−x1/​y2​−y1​​
+Input Format
+Input consists of 4 integers. The first integer corresponds to x1x_1x1​. The second integer corresponds to y1y_1y1​. The third and fourth integers correspond to x2x_2x2​ and y2y_2y2​ respectively.
+Output Format
+Refer to the Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 2 decimal places]
+Sample Input
+
+1
 2
 3
-7
-1
-17
+6
+
+Sample Output
+The slope of the line joining Ajay's house and Binoy's house is 2.00
+...
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if x2 != x1:
+    slope = (y2 - y1) / (x2 - x1)
+    print(f"The slope of the line joining Ajay's house and Binoy's house is {slope:.2f}")
+else:
+    print("The line is vertical, slope is undefined")
