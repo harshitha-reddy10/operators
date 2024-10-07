@@ -1,17 +1,25 @@
-'''
-Tamilnadu was battling one if it’s worst floods in a century last December, as several part of the state have been submerged and cut off from essential supplies. It was heartening that the Cricketers came forward to contribute for the cause of floods and it was decided amongst the team that the senior players donate 50% of their salary and junior players to donate 40% against the flood relief measures
-Assume there are 6 senior players and 5 junior players. The salary of senior players Rs.X and that of junior players is Rs.Y. Find the total contribution from the cricket team towards the floods.
-Input format:
-First line of the input is an integer “X” that specifies the salary of the senior players in rupees.
-Second line is an integer “Y” that specifies the salary of the junior players in rupees.
-Output format:
-Output should display a flood that gives the total contribution of money in rupees from the cricket team. The float value should be displayed correct to 2 decimal places.
-'''
-Sample input and output 1:
-45000
-40000
-215000.00
-Sample input and output 2:
-78000
-60000
-354000.00
+..
+ Dhoni once wished to join a a reputed Cricket Coaching Camp to be held at a place "X" kms away from his house. He told about this to his father and got his consent to use his friend's bike for the Camp. The Camp was to be held on all days of the month. His friend's bike provides a mileage of Y km/litre and the cost of petrol was Rs. Z. Dhoni's father now wanted to know the total amount that was needed by Dhoni to spend on his travel to the Camp. Help him find the same and assume number of days in a month as 30 days.
+Input Format:
+First line of the input is an integer "X" in kms that specifies the distance of the Camp from Dhoni's house.
+Second line is an integer "Y" in km/litre that specifies the mileage of his friend's bike.
+Third line is a float "Z" that specifies the cost of petrol in rupees.
+Output Format:
+Output should display a float that gives the total amount that is needed by Dhoni to spend on his travel in rupees. The float value is displayed correct to 2 decimal places.
+Sample Input and Output 1:
+75
+55
+63
+2577.27
+Sample Input and Output 2:
+35
+78
+65.0
+875.00
+..
+
+x=float(input())
+y=float(input())
+z=float(input())
+a=(x*z*30)/y
+print("%.2f"%a)
