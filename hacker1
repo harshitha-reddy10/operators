@@ -1,0 +1,31 @@
+def print_rangoli(size):
+    import string
+    
+    # List of alphabet characters
+    alphabet = string.ascii_lowercase
+    
+    # Initialize an empty list to store all rows of the rangoli
+    rows = []
+    
+    # Loop through to construct the first half (including the middle)
+    for i in range(size):
+        # Create the left half of the row (letters decreasing)
+        left_half = alphabet[size-1:i:-1]  # e.g., 'e-d-c' for size=5, i=2
+        # Create the right half (letters increasing)
+        right_half = alphabet[i:size]  # e.g., 'c-d-e' for size=5, i=2
+        # Combine left and right half with a central letter in between
+        row = '-'.join(left_half + right_half[1:])
+        # Add dashes to center the row
+        row = row.center(4 * size - 3, '-')
+        rows.append(row)
+    
+    # Combine the upper and lower part (lower part is the reverse of upper part)
+    full_rangoli = rows + rows[:-1][::-1]
+    
+    # Return the final rangoli pattern as a single string
+    return '\n'.join(full_rangoli)
+
+# Sample input to test the function
+if __name__ == '__main__':
+    size = int(input())  # Reading the size of the rangoli
+    print(print_rangoli(size))
